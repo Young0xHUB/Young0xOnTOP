@@ -1,0 +1,20 @@
+local _0x59=string.char
+local _0x19=game:GetService(_0x59(80,108,97,121,101,114,115))
+local _0x2A=game:GetService(_0x59(86,105,114,116,117,97,108,85,115,101,114))
+local _0x3B=game:GetService(_0x59(83,116,97,114,116,101,114,71,117,105))
+local _0x4C=(getgenv and getgenv())or _G
+local _0x5D=_0x59(95,89,48,85,78,71,48,88,95,65,78,84,73,65,70,75)
+if _0x4C[_0x5D]then pcall(function()_0x4C[_0x5D]:Disconnect()end)end
+_0x4C[_0x5D]=_0x19.LocalPlayer.Idled:Connect(function()
+    pcall(function()
+        _0x2A:CaptureController()
+        _0x2A:ClickButton2(Vector2.new(0,0))
+    end)
+end)
+pcall(function()
+    _0x3B:SetCore(_0x59(83,101,110,100,78,111,116,105,102,105,99,97,116,105,111,110),{
+        [_0x59(84,105,116,108,101)]=_0x59(89,111,117,110,103,48,120,32,72,117,98),
+        [_0x59(84,101,120,116)]=_0x59(65,78,84,73,32,65,70,75,32,65,67,84,73,86,79),
+        [_0x59(68,117,114,97,116,105,111,110)]=3
+    })
+end)
